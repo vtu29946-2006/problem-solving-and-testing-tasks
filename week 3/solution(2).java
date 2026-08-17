@@ -30,8 +30,8 @@ class Solution {
    
     public static void main(String[] args) {
         Solution sol = new Solution();
-        System.out.println(sol.frequencySort("tree"));    // Output: "eert" or "eetr"
-        System.out.println(sol.frequencySort("cccaaa"));  // Output: "cccaaa" or "aaaccc"
-        System.out.println(sol.frequencySort("Aabb"));    // Output: "bbAa" or "bbaA"
+        System.out.println(sol.frequencySort("tree")); 
+        System.out.println(sol.frequencySort("cccaaa")); 
+        System.out.println(sol.frequencySort("Aabb"));  
     }
 }

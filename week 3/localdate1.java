@@ -9,7 +9,7 @@ class Solution {
         return (int) Math.abs(ChronoUnit.DAYS.between(d1, d2));
     }
 
-    // For quick testing
+   
     public static void main(String[] args) {
         Solution sol = new Solution();
 

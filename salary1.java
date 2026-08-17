@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         if (!sc.hasNextInt()) {
-            return; // no input
+            return; 
         }
         int N = sc.nextInt();
 

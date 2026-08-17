@@ -6,7 +6,7 @@ class Solution {
         return d.getDayOfYear();
     }
 
-    // Quick test
+   
     public static void main(String[] args) {
         Solution sol = new Solution();
         System.out.println(sol.dayOfYear("2019-01-09")); // Output: 9

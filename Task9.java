@@ -21,7 +21,7 @@ class Student{
 	}
 }
 
-//Complete the code
+
 public class Task9
 {
 	public static void main(String[] args){

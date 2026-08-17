@@ -35,7 +35,7 @@ class Priorities {
                 @Override
                 public int compare(Student s1, Student s2) {
 
-                    // Higher CGPA first
+                    
                     int cgpaCompare =
                         Double.compare(s2.getCGPA(), s1.getCGPA());
 
@@ -43,7 +43,7 @@ class Priorities {
                         return cgpaCompare;
                     }
 
-                    // Same CGPA -> name alphabetically
+                   
                     int nameCompare =
                         s1.getName().compareTo(s2.getName());
 
@@ -51,7 +51,6 @@ class Priorities {
                         return nameCompare;
                     }
 
-                    // Same name -> smaller ID first
                     return Integer.compare(
                         s1.getID(),
                         s2.getID()

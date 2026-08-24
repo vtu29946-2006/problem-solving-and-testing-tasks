@@ -8,7 +8,7 @@ class Result {
             if (hour == 12) {
                 hour = 0;
             }
-        } else { // PM
+        } else { 
             if (hour != 12) {
                 hour += 12;
             }

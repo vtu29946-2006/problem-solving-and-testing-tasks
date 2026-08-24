@@ -15,13 +15,12 @@ class Main {
             int[] left = new int[26];
             int[] right = new int[26];
 
-            // First half
+            
             for (int i = 0; i < mid; i++) {
                 left[s.charAt(i) - 'a']++;
             }
 
-            // Second half
-            // For odd length, skip the middle character
+            
             for (int i = (n + 1) / 2; i < n; i++) {
                 right[s.charAt(i) - 'a']++;
             }

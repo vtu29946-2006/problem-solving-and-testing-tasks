@@ -7,10 +7,10 @@ class Result {
         int secondary = 0;
 
         for (int i = 0; i < n; i++) {
-            // Primary diagonal: top-left to bottom-right
+            
             primary += arr.get(i).get(i);
 
-            // Secondary diagonal: top-right to bottom-left
+            
             secondary += arr.get(i).get(n - 1 - i);
         }
 

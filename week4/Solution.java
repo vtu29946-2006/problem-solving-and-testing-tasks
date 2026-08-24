@@ -19,7 +19,7 @@ public class Solution {
 
         rotateMatrix(matrix, m, n, r);
 
-        // Print result
+       
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (j > 0) {
@@ -46,27 +46,26 @@ public class Solution {
 
             List<Integer> list = new ArrayList<>();
 
-            // Top row: left -> right
+           
             for (int j = left; j <= right; j++) {
                 list.add(matrix[top][j]);
             }
 
-            // Right column: top+1 -> bottom
+          
             for (int i = top + 1; i <= bottom; i++) {
                 list.add(matrix[i][right]);
             }
 
-            // Bottom row: right-1 -> left
+           
             for (int j = right - 1; j >= left; j--) {
                 list.add(matrix[bottom][j]);
             }
 
-            // Left column: bottom-1 -> top+1
             for (int i = bottom - 1; i > top; i--) {
                 list.add(matrix[i][left]);
             }
 
-            // Anti-clockwise rotation
+           
             int shift = r % list.size();
 
             List<Integer> rotated = new ArrayList<>();
@@ -81,22 +80,21 @@ public class Solution {
 
             int index = 0;
 
-            // Top row
+            
             for (int j = left; j <= right; j++) {
                 matrix[top][j] = rotated.get(index++);
             }
 
-            // Right column
+       
             for (int i = top + 1; i <= bottom; i++) {
                 matrix[i][right] = rotated.get(index++);
             }
 
-            // Bottom row
+          
             for (int j = right - 1; j >= left; j--) {
                 matrix[bottom][j] = rotated.get(index++);
             }
 
-            // Left column
             for (int i = bottom - 1; i > top; i--) {
                 matrix[i][left] = rotated.get(index++);
             }
